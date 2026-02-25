@@ -1,0 +1,126 @@
+@layer base {
+  :root {
+    --type-display-xl: clamp(110px, 10.2vw, 140px);
+    --type-display-l: clamp(96px, 8.4vw, 124px);
+    --type-display-m: clamp(82px, 7vw, 110px);
+    --type-label: 12px;
+    --type-track-l: clamp(28px, 2.6vw, 36px);
+    --type-track-m: clamp(24px, 2.1vw, 30px);
+    --type-body: 18px;
+    --type-meta: 13px;
+  }
+}
+
+@layer components {
+  .display-cinematic {
+    font-family: var(--font-display);
+    font-size: var(--type-display-xl);
+    line-height: 0.92;
+    letter-spacing: -0.03em;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    text-wrap: balance;
+  }
+
+  .display-chapter {
+    font-family: var(--font-display);
+    font-size: var(--type-display-m);
+    line-height: 0.95;
+    letter-spacing: -0.024em;
+    font-weight: 500;
+    color: var(--color-text-primary);
+  }
+
+  .label-subtle {
+    margin-bottom: 20px;
+    font-family: var(--font-ui);
+    font-size: var(--type-label);
+    line-height: 1.4;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: color-mix(in srgb, var(--color-text-secondary) 76%, transparent);
+  }
+
+  .track-title-elegant {
+    font-family: var(--font-display);
+    font-size: var(--type-track-l);
+    line-height: 1.18;
+    letter-spacing: 0.016em;
+    font-weight: 400;
+    color: var(--color-text-primary);
+    text-align: left;
+    border: 0;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .body-editorial {
+    font-family: var(--font-ui);
+    font-size: var(--type-body);
+    line-height: 1.6;
+    letter-spacing: 0.005em;
+    font-weight: 350;
+    color: var(--color-text-secondary);
+    max-width: 42ch;
+  }
+
+  .metadata-soft {
+    margin-top: 30px;
+    font-family: var(--font-ui);
+    font-size: var(--type-meta);
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: color-mix(in srgb, var(--color-text-secondary) 64%, transparent);
+  }
+
+  .nav-label {
+    font-family: var(--font-ui);
+    font-size: 11px;
+    line-height: 1.4;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+  }
+  .timer-mono {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    font-variant-numeric: tabular-nums;
+    color: var(--color-text-secondary);
+  }
+  .heading-1 {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 3vw, 42px);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    color: var(--color-text-primary);
+  }
+  .heading-2 {
+    font-family: var(--font-display);
+    font-size: clamp(22px, 2.4vw, 32px);
+    font-weight: 400;
+    letter-spacing: -0.015em;
+    line-height: 1.15;
+    color: var(--color-text-primary);
+  }
+  .body-small {
+    font-family: var(--font-ui);
+    font-size: 13px;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    color: var(--color-text-secondary);
+  }
+  .archive-index {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    font-variant-numeric: tabular-nums;
+    color: var(--color-text-index);
+  }
+}

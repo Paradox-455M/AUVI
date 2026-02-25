@@ -1,0 +1,29 @@
+# Secrets
+backend/.env
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+# Build output
+backend/.bin/
+
+# Uploads
+backend/uploads/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Go
+*.test
+*.out
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# IDE
+.idea/
+.vscode/
